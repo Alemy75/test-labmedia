@@ -1,0 +1,46 @@
+@import '../vars';
+
+.design {
+	width: 100%;
+	margin-bottom: 60px;
+	&__pros {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		& .article {
+			width: 23.5%;
+			& img {
+				display: block;
+				width: 85%;
+				margin: 0 auto;
+				margin-bottom: 25px;
+			}
+			& p {
+				margin-top: 20px;
+			}
+			&_black {
+				& img {
+					margin: 0 auto;
+				}
+				& div {
+					background-color: $darkbg;
+					padding: 0 15px;
+					padding-top: 20px;
+					padding-bottom: 25px;
+					border-radius: 5px;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					-ms-border-radius: 5px;
+					-o-border-radius: 5px;
+				}
+				& p {
+					font-size: 14px;
+					line-height: 21px;
+					color: white;
+					margin-bottom: 24px;
+				}
+			}
+		}
+	}
+}
