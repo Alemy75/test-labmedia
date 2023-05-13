@@ -1,21 +1,24 @@
 .services {
+	margin-bottom: 80px;
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 32%;
+		}	
 	}
 	&__item {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 32%;
+		margin-bottom: 50px;
 		img {
 			margin-bottom: 20px;
 		}
-	}
-	&::after {
-		content: 'hello';
-		display: inline-block;
-		width: 32%;
+		
 	}
 }

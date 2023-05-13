@@ -1,17 +1,36 @@
 .scanner {
+	width: 100%;
 	margin-bottom: 60px;
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 680px) {
+			display: block;
+		}
 	}
 	&_img {
-		width: 49%;
+		width: 50%;
+		@media (max-width: 680px) {
+			width: 100%;
+		}
 		& img {
 			width: 100%;
+			@media (max-width: 680px) {
+				width: 100vw;
+				position: static;
+				margin-bottom: 25px;
+				margin-left: -30px;
+			}
+			@media (max-width: 400px) {
+				margin-left: -15px;
+			}
 		}
 	}
 	&__benefits {
-		width: 49%;
+		width: 50%;
+		@media (max-width: 680px) {
+			width: 100%;
+		}
 	}
 	&__item {
 		display: flex;
@@ -19,7 +38,16 @@
 		align-items: center;
 		& img {
 			margin: 0 42px;
+			@media (max-width: 680px) {
+				margin-bottom: 20px;
+			}
 		}
 		margin-bottom: 40px;
+		@media (max-width: 680px) {
+			flex-direction: column;
+			& p {
+				width: 100%;
+			}
+		}
 	}
 }

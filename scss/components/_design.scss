@@ -7,9 +7,34 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 
 		& .article {
 			width: 23.5%;
+			@media (max-width: 720px) {
+				width: 48%;
+				margin-bottom: 50px;
+			}
+			@media (max-width: 400px) {
+				width: 100%;
+				margin-bottom: 50px;
+
+			}
+			&__right {
+				width: 47%;
+				display: flex;
+				justify-content: space-between;
+				article {
+					width: 48%;
+				}
+				@media (max-width: 720px) {
+					width: 100%;
+				}
+				@media (max-width: 400px) {
+					font-size: 12px;
+					line-height: 17px;
+				}
+			}
 			& img {
 				display: block;
 				width: 85%;
@@ -44,3 +69,5 @@
 		}
 	}
 }
+
+
