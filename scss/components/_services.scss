@@ -1,3 +1,5 @@
+@import '../vars';
+
 .services {
 	margin-bottom: 80px;
 	&__wrap {
@@ -16,11 +18,35 @@
 		align-items: center;
 		width: 32%;
 		margin-bottom: 50px;
+		@media (max-width: 400px) {
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+		}
 		img {
 			margin-bottom: 20px;
+			@media (max-width: 400px) {
+				margin: 0;
+			}	
 		}
 		@media (max-width: 400px) {
 			width: 100%;
-		}			
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			& p {
+				width: 70%;
+				font-size: 12px;
+			}
+			border-bottom: 1px solid $lightgray;
+		}	
+		&_reverse {
+			@media (max-width: 400px) {
+				flex-direction: row-reverse;
+			}	
+		}	
+		&_noborder {
+			border: none;
+		}	
 	}
 }
+
