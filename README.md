@@ -1,6 +1,6 @@
 ## Тестовое задание на "HTML Верстальщик"
 
-Серверная часть приложения.
+Верстка лендинга
 
 ## Установка
 
@@ -12,11 +12,8 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ npm run dev
 
-# watch mode
-$ npm run start:dev
+# build
+$ npm run build
 
-# production mode
-$ npm run start:prod
-```
